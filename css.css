@@ -5,8 +5,8 @@
 }
 
 #s1_header{background: #1e1109} 
-#s2_about{background: #f0e9d7} 
-#s3_menus{background:  #fefaf7} 
+#s2_about{background: #F6EBEB} 
+#s3_menus{background:  #F6EBEB} 
 #s4_learn{background:#26221f } 
 
 /*---s1_header---*/
@@ -61,7 +61,7 @@
     }
 }
 
-/*---s3_hobbies---*/
+/*---s3_menus---*/
 .myGrid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
