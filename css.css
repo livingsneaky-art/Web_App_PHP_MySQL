@@ -7,11 +7,19 @@
 #s1_header{background: #1e1109} 
 #s2_about{background: #F6EBEB} 
 #s3_menus{background:  #F6EBEB} 
+#s5_brochures{background:  #F6EBEB} 
 #s4_learn{background:#26221f } 
 
 /*---s1_header---*/
 #s1_header{
     background: url("pics/pic1.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+#s1_headerBookOrder{
+    background: url("pics/PIC\ 1.png");
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
