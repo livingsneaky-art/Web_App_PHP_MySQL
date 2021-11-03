@@ -77,9 +77,7 @@
     </style>
 </head>
 <body>
-        <?php 
-            include 'connection.php';
-        ?>
+       
     <center>
     
     <form class="border border-success " action='' method='POST'>
