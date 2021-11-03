@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Princess+Sofia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    
+    <script src="https://kit.fontawesome.com/d18cd545e2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css.css">
+    <title>Cut'n Fold Catering</title>
+  </head>
+  <body id="top" class="bg-dark">
+    
+    <!--NAVBAR-->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand text-danger" href="#top">C J</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" 
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="ToggleNavigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-items"><a href="#s2_about" class="nav-link">Home</a></li>
+                <li class="nav-items"><a href="#s2_about" class="nav-link">About Us</a></li>
+                <li class="nav-items"><a href="#s3_menus" class="nav-link">Menu</a></li>
+                <li class="nav-items"><a href="#s4_learn" class="nav-link">Brochure</a></li>
+                <li class="nav-items"><a href="#s2_about" class="nav-link">Faq</a></li>
+                <li class="nav-items"><a href="#s2_about" class="nav-link">Blog</a></li>
+                <li class="nav-items"><a href="#s2_about" class="nav-link">Contact Us</a></li>
+                <li class="nav-items"><a href="#s2_about" class="nav-link">Book Orders</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+    <section id="s1_header">
+            <aside class="container">
+                <h1 class="text-danger display-4" >Order for your love loved ones anywhere in Cebu</h1>
+                <h5 class="text-white" style="background-color: orange;">BOOK NOW</h5> 
+                <h5 class="text-white" style="background-color: orange;">DOWNLOAD BROCHURE'S</h5> 
+                <h5 class="text-white">Wyatt's Crib Bldg. 362A. tan-awan, Pinsao · Mandaue City, (032) 384-2337 · cutfoldcatering@gmail.com</h5> 
+            </aside>
+    </section>
+
+    
+    <style>
+        #s1_header{
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+        }
+        #s1_header aside{
+            text-align: center;
+            grid-column: 2/4;
+            grid-row: 4/5;
+        }
+        @media (max-width: 992px) {
+            #s1_header {height: 50vh;}
+            #s1_header .display-4{font-size: 28px;}
+            #s1_header h5{font-size: 12px;}
+        }
+    </style>
+
+    <section class="py-5" id="s2_about">
+        <div class="container py-5 s2_about_grid">
+
+        <div class="img-selfpotrait">
+        <img class="img-fluid my-2 border border-light" src="pics/pIC 2.png" alt="about">
+        </div>
+
+        <div class="hd-about">
+            <div class="btn-toolbar" role="toolbar" aria-label="Social Meadia Buttons">
+                <div class="btn-group m-2 btn-group-sm">
+                    <h3 class="text-danger">About
+                        
+                    <button id="socialicon" type="button" onclick="showcustom()" class="btn btn-info"><i class="fab fa-facebook-square"></i></button>
+                    <button id="socialicon" type="button" onclick="showcustom()" class="btn btn-info"><i class="fab fa-twitter-square"></i></button>
+                    <button id="socialicon" type="button" onclick="showcustom()" class="btn btn-info"><i class="fab fa-instagram"></i></button>
+                    <button id="socialicon" type="button" onclick="showcustom()" class="btn btn-info"><i class="fab fa-youtube"></i></button>
+                        <div class="py-5" id="customAlert">
+                            <div class="heading">
+                                The social media icon has no link reference.
+                                <button type="button" id="confirmbtn" onclick="hidealert()">OK</button>
+                            </div>
+                        </div>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="txt-about">
+            <button id="toggleButton">Hide</button>
+        <p id="resultList" class="text-gray"></p>
+        </div>
+
+        </div>
+    </section>
+
+    <section id="s3_menus">
+        <h1 class="text-danger " style="padding: 30px 0 0 370px;">The Menus</h1>
+        <div class="container py-5 myGrid">
+        <div class="card mx-2">
+            <div class="card-body mySubGrid">
+            <img class="img-fluid border border-dark" src="pics/Rectangle 8.png" alt="package">
+            <aside>
+                <h2 class="text-danger my-2">Package A P10,000</h2>
+                <li>Good for up to fifty(50) persons</li>
+                <li>Free delivery within Cebu City</li>
+            </aside>
+            </div>
+        </div>
+
+        <div class="card mx-2">
+            <div class="card-body mySubGrid">
+            <img class="img-fluid border border-dark" src="pics/Rectangle 9.png" alt="package">
+            <aside>
+                <h2 class="text-danger my-2">Package B P10,000</h2>
+                <li>Good for up to fifty(50) persons</li>
+                <li>Free delivery within Cebu City</li>
+            </aside>
+            </div>
+        </div>
+
+        <div class="card mx-2">
+            <div class="card-body mySubGrid">
+            <img class="img-fluid border border-dark" src="pics/Rectangle 10.png" alt="package">
+            <aside>
+                <h2 class="text-danger my-2">Package C P10,000</h2>
+                <li>Good for up to fifty(50) persons</li>
+                <li>Free delivery within Cebu City</li>
+            </aside>
+            </div>
+        </div>
+
+        <div class="card mx-2">
+            <div class="card-body mySubGrid">
+            <img class="img-fluid border border-dark" src="pics/Rectangle 12.png" alt="package">
+            <aside>
+                <h2 class="text-danger my-2">Package D P10,000</h2>
+                <li>Good for up to fifty(50) persons</li>
+                <li>Free delivery within Cebu City</li>
+            </aside>
+            </div>
+        </div>
+
+        <div class="card mx-2">
+            <div class="card-body mySubGrid">
+            <img class="img-fluid border border-dark" src="pics/Rectangle 13.png" alt="package">
+            <aside>
+                <h2 class="text-danger my-2">Package E P10,000</h2>
+                <li>Good for up to fifty(50) persons</li>
+                <li>Free delivery within Cebu City</li>
+            </aside>
+            </div>
+        </div>
+
+        <div class="card mx-2">
+            <div class="card-body mySubGrid">
+            <img class="img-fluid border border-dark" src="pics/Rectangle 14.png" alt="package">
+            <aside>
+                <h2 class="text-danger my-2">Package F P10,000</h2>
+                <li>Good for up to fifty(50) persons</li>
+                <li>Free delivery within Cebu City</li>
+            </aside>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+
+    <section id="s3_menus">
+        <h1 class="text-danger " style="padding: 30px 0 0 320px;">BROCHURES</h1>
+        <p class="text-white " style="padding: 0px 0 0 350px;">DOWNLOAD AND CHOICE</p>
+        <div class="container py-5 myGrid">
+        <div class="card mx-2">
+            <div class="card-body mySubGrid">
+            <img class="img-fluid border border-dark" src="pics/Rectangle 8.png" alt="brochurePackage">
+            <aside>
+                <h2 class="text-danger my-2">All-In Highland Wedding</h2>
+                <li>Good for up to fifty(50) persons</li>
+                <li class="text-white" style="background-color: orange;">DOWNLOAD</li>
+            </aside>
+            </div>
+        </div>
+
+        <div class="card mx-2">
+            <div class="card-body mySubGrid">
+            <img class="img-fluid border border-dark" src="pics/Rectangle 9.png" alt="brochurePackage">
+            <aside>
+                <h2 class="text-danger my-2">To Go Trays</h2>
+                <li>Good for up to fifty(50) persons</li>
+                <li class="text-white" style="background-color: orange;">DOWNLOAD</li>
+            </aside>
+            </div>
+        </div>
+
+        <div class="card mx-2">
+            <div class="card-body mySubGrid">
+            <img class="img-fluid border border-dark" src="pics/Rectangle 10.png" alt="brochurePackage">
+            <aside>
+                <h2 class="text-danger my-2">Gift Box</h2>
+                <li>Good for up to fifty(50) persons</li>
+                <li class="text-white" style="background-color: orange;">DOWNLOAD</li>
+            </aside>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <section  id="s4_learn">
+        <div class="container py-5 myGrid">
+          
+            <div calss="card mx-2" >
+                <div class="card-body mySubGrid">
+                <p class="text-white">Contact Info</p>
+                <p class="text-white">Contact with us to know more about what we do.</p>
+                <p class="text-white">Wyatt's Crib Bldg. 362A. tan-awan, Pinsao</p>
+                <p class="text-white">Proper Mandaue City, 2600</p>
+                <p class="text-white">Phone:(+63)9-325-417-329</p>
+                <p class="text-white">Landline: (072)-423-2399</p>
+                <p class="text-white">Email: naimascatering@gmail.com</p>
+                </div>
+            </div>
+         
+            <div calss="card mx-2" >
+                <div class="card-body mySubGrid">
+                <p class="text-white">Recent Posts</p>
+                <p class="text-white">No post found</p>
+                <p class="text-white">Featured Services</p>
+                    <div>
+                        <img class="img-fluid border border-dark" src="pics/Rectangle 10.png"  alt="package">
+                        <p class="text-white" >Naimas at Mount Costa</p>
+                        <img class="img-fluid border border-dark" src="pics/star 2.png"  alt="Cooking">
+                        <p class="text-white" style="padding-top: 5px;">P8000</p>
+                        
+                    </div>
+                    <div style="padding-top: 30px;">
+                        <img class="img-fluid border border-dark" src="pics/Rectangle 12.png"  alt="package">
+                        <p class="text-white" >Merienda</p>
+                        <img class="img-fluid border border-dark" src="pics/star 2.png"  alt="Cooking">
+                        <p class="text-white" style="padding-top: 5px;" >P8000</p>
+
+                    </div>    
+                </div>       
+            </div>
+
+            <div calss="card mx-2" >
+                <div class="card-body mySubGrid">
+                <p class="text-white">Useful Links</p>
+                <p class="text-white">Privacy Policy</p>
+                <p class="text-white">Terms & Conditions</p>
+                <p class="text-white">Follow Us</p>
+                <img class="rounded" src="pics/Ellipse 1.png"  alt="socialM">
+                <img class="rounded" src="pics/Ellipse 2.png"  alt="socialM">  
+                <img class="rounded" src="pics/Ellipse 3.png"  alt="socialM">
+
+            </div>
+                
+                
+        </div>
+    </section>
+
+ 
+    
+    <section id="s5_copyright" class="text-white bg-dark small my-5 text-center">
+        <p>&copy;<script>document.write(new Date().getFullYear());</script>
+            Cut'n Fold Catering. All rights reserved.</p>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+    var customalert = document.getElementById("customAlert");
+    function showcustom() {
+        customalert.style.display='block';
+    }
+    function hidealert() {
+        customalert.style.display='none';
+    }
+    
+    toggleButton.addEventListener("click", function() {
+     
+        toggleButton.style.backgroundColor = "yellow";
+    });
+   
+
+    
+    
+        $(document).ready(function(){
+        $('a[href^="#"]').on('click',function (e)
+        {e.preventDefault();
+        
+        var target = this.hash,$target = $(target);
+    
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+         }, 900, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
+    
+    var resultList = $("#resultList");
+    resultList.text("Cut ‘n Fold Catering believes in exceptionally satisfying clients and making gustatory delights a reality! Be it food you are craving for or an innovative dish or event idea, we work with you to make it happen.");
+    var toggleButton = $("#toggleButton");
+    toggleButton.on("click", function () {
+        resultList.toggle(500);
+        
+
+        if(toggleButton.text() == "Hide") toggleButton.text("Show");
+        else toggleButton.text("Hide");
+    })
+    
+
+  
+    
+});
+</script>
+
+  </body>
+</html>
