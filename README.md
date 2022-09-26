@@ -1,1 +1,1 @@
-unfinish
+SQL AND LOGICs
